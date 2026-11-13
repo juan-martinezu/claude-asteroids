@@ -6,6 +6,7 @@ const W = 800;
 const H = 600;
 
 // ── Input ─────────────────────────────────────────────────────────────────────
+
 const keys = {};
 const justPressed = {};
 
@@ -16,7 +17,7 @@ window.addEventListener('keydown', e => {
     e.preventDefault();
 });
 window.addEventListener('keyup', e => { keys[e.code] = false; });
-
+>
 function pressed(code) {
   const val = justPressed[code];
   justPressed[code] = false;
